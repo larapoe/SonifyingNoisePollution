@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sonifying Noise Pollution map</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    
+    <script type="text/javascript" src="js/audio.js"></script> 
+    
+    <!––script type="text/javascript" src="js/dragimage.js"><!––/script>  
+    
+    <!––script type="text/javascript" src="js/map.js"><!––/script>
+    <script src="js/common.js"></script>
+    
+    <script src="js/loader.js"></script>
+    
+    <script src="js/scroll.js"></script>
+    
+</head>
+
+<body>
+ 
+    <noscript id="noScriptBanner"> Javascript is required for this page to work.
+    </noscript>
+ 
+    <div id="london" class="city" onmouseover="PlayCitySound(this)" onmouseleave="StopCitySound(this)">
+    </div>
+ 
+    <div id="slough" class="city" onmouseover="PlayCitySound(this)" onmouseleave="StopCitySound(this)">
+    </div>
+ 
+    <div id="reading" class="city" onmouseover="PlayCitySound(this)" onmouseleave="StopCitySound(this)">
+    </div>
+
+    <div id="oxford" class="city" onmouseover="PlayCitySound(this)" onmouseleave="StopCitySound(this)">
+    </div>
+    
+    <div class="main-wrapper">
+        <canvas id="demo" width="512" height="512"></canvas>
+    </div>
+    
+</body>
+</html>

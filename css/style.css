@@ -1,0 +1,29 @@
+.city{
+    width:2em;
+    height:2em;
+}
+
+#london{
+    background-color:#bca030;
+}
+
+#slough{
+    background-color:#ed2024;
+}
+
+#reading{
+    background-color:#d04927;
+}
+
+#oxford{
+    background-color:#92c83e;
+}
+
+#noScriptBanner{
+    background-color:red;
+    width:100%;
+    display:block;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+}
