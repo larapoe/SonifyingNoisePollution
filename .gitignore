@@ -1,3 +1,10 @@
 *.DS_Store
 *.sw*
 ~*
+
+# trash left by KDE dolphin
+.directory
+
+# files left by idea
+.idea/
+*.iml
