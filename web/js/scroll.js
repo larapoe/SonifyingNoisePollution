@@ -34,7 +34,7 @@ Camera.prototype.move = function (delta, dirx, diry) {
 
 Screen.load = function () {
     return [
-        Loader.loadImage('tiles', '../website/images/NoisePollutionMap.png'),
+        Loader.loadImage('tiles', './images/NoisePollutionMap.png'),
     ];
 };
 
