@@ -74,12 +74,12 @@ Keyboard.isDown = function (keyCode) {
 };
 
 //
-// Game object
+// Screen object
 //
 
-var Game = {};
+var Screen = {};
 
-Game.run = function (context) {
+Screen.run = function (context) {
     this.ctx = context;
     this._previousElapsed = 0;
 
@@ -90,7 +90,7 @@ Game.run = function (context) {
     }.bind(this));
 };
 
-Game.tick = function (elapsed) {
+Screen.tick = function (elapsed) {
     window.requestAnimationFrame(this.tick);
 
     // clear previous frame
@@ -103,12 +103,12 @@ Game.tick = function (elapsed) {
 
     this.update(delta);
     this.render();
-}.bind(Game);
+}.bind(Screen);
 
 // override these methods to create the demo
-Game.init = function () {};
-Game.update = function (delta) {};
-Game.render = function () {};
+Screen.init = function () {};
+Screen.update = function (delta) {};
+Screen.render = function () {};
 
 //
 // start up function
@@ -116,5 +116,5 @@ Game.render = function () {};
 
 window.onload = function jsloader() {
     var context = document.getElementById('demo').getContext('2d');
-    Game.run(context);
+    Screen.run(context);
 };
