@@ -32,20 +32,20 @@ Camera.prototype.move = function (delta, dirx, diry) {
     this.y = Math.max(0, Math.min(this.y, this.maxY));
 };
 
-Game.load = function () {
+Screen.load = function () {
     return [
         Loader.loadImage('tiles', '../website/images/NoisePollutionMap.png'),
     ];
 };
 
-Game.init = function () {
+Screen.init = function () {
     Keyboard.listenForEvents(
         [Keyboard.LEFT, Keyboard.RIGHT, Keyboard.UP, Keyboard.DOWN]);
     this.tileAtlas = Loader.getImage('tiles');
     this.camera = new Camera(map, 512, 512);
 };
 
-Game.update = function (delta) {
+Screen.update = function (delta) {
     // handle camera movement with arrow keys
     var dirx = 0;
     var diry = 0;
@@ -57,7 +57,7 @@ Game.update = function (delta) {
     this.camera.move(delta, dirx, diry);
 };
 
-Game._drawLayer = function (layer) {
+Screen._drawLayer = function (layer) {
     var startCol = Math.floor(this.camera.x / map.tsize);
     var endCol = startCol + (this.camera.width / map.tsize);
     var startRow = Math.floor(this.camera.y / map.tsize);
@@ -87,7 +87,7 @@ Game._drawLayer = function (layer) {
     }
 };
 
-Game.render = function () {
+Screen.render = function () {
     // draw map background layer
     this._drawLayer(0);
     // draw map top layer
