@@ -13,15 +13,19 @@
   "author": "Lara Poe <larapoe@bu.edu>",
   "contributors": [
     {
-       "name": "Jen Haugan"
+      "name": "Jen Haugan"
     },
     {
-       "name": "Daniel Valentine <dval@bu.edu>"
+      "name": "Daniel Valentine <dval@bu.edu>"
     }
   ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/larapoe/SonifyingNoisePollution/issues"
   },
-  "homepage": "https://github.com/larapoe/SonifyingNoisePollution#readme"
+  "homepage": "https://github.com/larapoe/SonifyingNoisePollution#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  }
 }
