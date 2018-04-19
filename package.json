@@ -1,0 +1,27 @@
+{
+  "name": "sonifyingnoisepollution",
+  "version": "0.0.1",
+  "description": "Website for Jen Haugan/Lara Poe's UK sound pollution project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larapoe/SonifyingNoisePollution.git"
+  },
+  "author": "Lara Poe <larapoe@bu.edu>",
+  "contributors": [
+    {
+       "name": "Jen Haugan"
+    },
+    {
+       "name": "Daniel Valentine <dval@bu.edu>"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larapoe/SonifyingNoisePollution/issues"
+  },
+  "homepage": "https://github.com/larapoe/SonifyingNoisePollution#readme"
+}
